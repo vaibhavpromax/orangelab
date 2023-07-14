@@ -1,9 +1,9 @@
 const puppeteer = require("puppeteer");
 const delay = require("./utils/delay");
 
-const start = async (url) => {
-  // Launch a new browser instance
+const start = async () => {
   try {
+    // Launch a new browser instance
     const browser = await puppeteer.launch({
       headless: false,
       defaultViewport: null,
